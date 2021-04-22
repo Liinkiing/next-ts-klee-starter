@@ -1,5 +1,6 @@
-import React from 'react'
 import { Box, HStack } from '@liinkiing/klee'
+import React from 'react'
+
 import AppLink from '~/ui/typography/AppLink'
 
 const AppNav: React.FC = () => (

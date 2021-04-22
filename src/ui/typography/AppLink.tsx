@@ -1,6 +1,6 @@
-import React from 'react'
-import Link, { LinkProps } from 'next/link'
 import { Box, BoxProps, KleeFontFamily, KleeFontWeight } from '@liinkiing/klee'
+import Link, { LinkProps } from 'next/link'
+import React from 'react'
 
 interface Props extends LinkProps, BoxProps {}
 

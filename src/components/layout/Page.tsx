@@ -1,9 +1,10 @@
-import React from 'react'
-import { NextPage } from 'next'
-import { motion } from 'framer-motion'
 import styled from '@emotion/styled'
-import { DefaultRouterPageVariants, ease } from '~/common/framer'
 import { Box } from '@liinkiing/klee'
+import { motion } from 'framer-motion'
+import { NextPage } from 'next'
+import React from 'react'
+
+import { ease } from '~/common/framer'
 
 interface Props {
   readonly as?: string

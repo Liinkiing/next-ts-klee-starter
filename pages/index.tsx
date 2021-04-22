@@ -1,7 +1,8 @@
+import { Box, Heading, Text } from '@liinkiing/klee'
 import { NextPage } from 'next'
+
 import AppHead from '~/components/AppHead'
 import Page from '~/components/layout/Page'
-import { Box, Heading, Text } from '@liinkiing/klee'
 
 const Index: NextPage = () => (
   <Page>

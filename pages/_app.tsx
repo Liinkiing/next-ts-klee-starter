@@ -1,9 +1,10 @@
+import { KleeProvider, useTheme } from '@liinkiing/klee'
+import { AnimatePresence } from 'framer-motion'
+import { AppProps } from 'next/app'
 import React, { FC } from 'react'
-import App, { AppProps } from 'next/app'
+
 import NProgress from '~/components/NProgress'
 import AppNav from '~/components/layout/AppNav'
-import { AnimatePresence } from 'framer-motion'
-import { KleeProvider, useTheme } from '@liinkiing/klee'
 import GlobalStyles from '~/styles/Global'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
