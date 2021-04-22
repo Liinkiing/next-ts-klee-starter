@@ -11,6 +11,7 @@ const config = {
       tsconfig: 'tsconfig.jest.json',
     },
   },
+  snapshotSerializers: ['@emotion/jest/serializer'],
   rootDir: '.',
   clearMocks: true,
   setupFilesAfterEnv: ['<rootDir>/setupTest.ts'],
