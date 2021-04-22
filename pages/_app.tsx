@@ -1,27 +1,28 @@
-import React from 'react'
-import App from 'next/app'
+import React, { FC } from 'react'
+import App, { AppProps } from 'next/app'
 import NProgress from '~/components/NProgress'
 import AppNav from '~/components/layout/AppNav'
 import { AnimatePresence } from 'framer-motion'
-import { ThemeProvider } from 'styled-components'
-import GlobalStyle from '~/styles/global'
-import { light } from '~/styles/themes'
+import { KleeProvider, useTheme } from '@liinkiing/klee'
 
-class MyApp extends App {
-  render() {
-    const { Component, pageProps, router } = this.props
+const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
+  const theme = useTheme()
 
-    return (
-      <ThemeProvider theme={light}>
-        <GlobalStyle />
-        <NProgress color={light.colors.primary} spinner={false} />
-        <AppNav />
-        <AnimatePresence exitBeforeEnter initial={false}>
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
-      </ThemeProvider>
-    )
-  }
+  return (
+    <>
+      <NProgress color={theme.colors.red['400']} spinner={false} />
+      <AppNav />
+      <AnimatePresence exitBeforeEnter initial={false}>
+        <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
+    </>
+  )
 }
 
-export default MyApp
+const MyAppWithProviders = ({ ...props }: AppProps) => (
+  <KleeProvider>
+    <MyApp {...props} />
+  </KleeProvider>
+)
+
+export default MyAppWithProviders

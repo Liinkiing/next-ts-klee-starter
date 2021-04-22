@@ -12,4 +12,4 @@ export const DefaultRouterPageVariants: Variants = {
       ease,
     },
   },
-}
+} as const

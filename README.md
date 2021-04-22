@@ -1,4 +1,4 @@
-# Next Starter
+# Next Klee Starter
 
 A starter to bootstrap your **Next** application (nice pun gg)
 
@@ -38,30 +38,18 @@ It also comes with **NProgress** support by default, so it shows a small loading
 the page when loading. You can find the component in `~/components/NProgress.tsx`, and it is used in the
 custom `_app.tsx`
 
-## Styled component
+## Emotion
 
-The template comes with [styled-components](https://github.com/styled-components/styled-components).
-Again, you can either choose to not use it, this is a personal choice.
-You can also find a `styles` folder, which contains many related
-styled-components files to keep things organized. It's also includes all themes-related stuff in here.
-It's again a personal convention that I follow, feel free to annihilate this directory if you want 😢
+The template comes with [emotion](http://emotion.sh/).
 
-## Styled system
+## Klee and styled system
 
-It also comes with [styled-system](https://github.com/styled-system/styled-system). It is a great way to
+It also comes with [klee](https://github.com/Liinkiing/klee) and [styled-system](https://github.com/styled-system/styled-system). It is a great way to
 build reusable UI blocks with a great props API and consistent spaces / typography.
-A lot comes from the theme, provided in `~/styles/themes/base.ts` where we define some
-breakpoints, spacings and typography stuff. It allows then the custom `AppBox` component (`~/ui/AppBox`)
+A lot comes from the Klee theme. It allows then the custom `Box` component (from `@liinkiing/klee`)
 to be aware of your theme and then build something amazing with the primitives.
 By default, this starter provides some basic examples components that uses this pattern, for
 example the `AppNav` component (`~/components/layout/AppNav`).
-
-🔥 It also supports and provides autocomplete for props that takes source from the theme (e.g `bg`, `zIndex`, `border`...). 🔥
-
-**TypeScript > 4.1** is mandatory because I'm using the new [Template Litteral Types](https://devblogs.microsoft.com/typescript/announcing-typescript-4-1-beta/#template-literal-types) to
-provide autocompletion of the color prop based of the nested `colors` object, so when using
-`bg` prop for exemple, you should have autocompletion for `red.xxx, blue.xxx` or anything defined in your `colors.ts`.
-It supports nested elements with a dot notation! (that's why TS 4.1 is required)
 
 ## Framer motion
 
@@ -75,7 +63,7 @@ can find the default variant used for the page transitions in `~/common/framer.t
 with [ts-jest](https://github.com/kulshekhar/ts-jest) so your tests also checks your types.
 You can look the **jest.config.js** and the file **setupTest.ts** to see what's in there.
 [jest-styled-components](https://github.com/styled-components/jest-styled-components) is also used to have deterministic classNames
-within your styled components that you are testing.
+within your emotions styled components that you are testing.
 [Cypress](https://cypress.io) starter for e2e tests. Take a look at Cypress config file **cypress.json**
 
 ### Cypress

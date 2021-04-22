@@ -1,16 +1,17 @@
 import React from 'react'
 import { NextPage } from 'next'
 import { motion } from 'framer-motion'
-import styled from 'styled-components'
-import { DefaultRouterPageVariants } from '~/common/framer'
-import { BREAKPOINTS } from '~/styles/modules/variables'
+import styled from '@emotion/styled'
+import { DefaultRouterPageVariants, ease } from '~/common/framer'
+import { Box } from '@liinkiing/klee'
 
 interface Props {
   readonly as?: string
-  readonly noDefaultTransition?: boolean
+  readonly transitionDuration?: number
 }
 
-const PageInner = styled(motion.div)`
+const PageInner = styled(motion(Box))`
+  will-change: opacity, transform;
   flex: 1;
   display: flex;
   height: 100%;
@@ -19,24 +20,20 @@ const PageInner = styled(motion.div)`
   transform-origin: left center;
   max-width: 90vw;
   margin: 0 auto;
-  @media screen and (min-width: ${BREAKPOINTS.tablet}) {
-    min-width: 70vw;
-  }
 `
 
-const Page: NextPage<Props> = ({ children, as = 'div', noDefaultTransition = false, ...rest }) =>
-  React.createElement(
-    // @ts-ignore
-    motion[as],
-    {
-      exit: 'exit',
-      initial: 'exit',
-      animate: 'enter',
-      className: 'router__wrapper',
-    },
-    <PageInner {...rest} {...(noDefaultTransition ? {} : { variants: DefaultRouterPageVariants })}>
-      {children}
-    </PageInner>,
-  )
+const Page: NextPage<Props> = ({ children, as = 'main', transitionDuration = 0.15, ...rest }) => (
+  <PageInner
+    as={as}
+    minWidth={['auto', '70vw']}
+    initial={{ opacity: 0, x: -10 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: -10 }}
+    transition={{ duration: transitionDuration, ease }}
+    {...rest}
+  >
+    {children}
+  </PageInner>
+)
 
 export default Page

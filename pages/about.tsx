@@ -1,19 +1,17 @@
 import { NextPage } from 'next'
 import AppHead from '~/components/AppHead'
 import Page from '~/components/layout/Page'
-import Heading, { HeadingSize } from '~/ui/typography/Heading'
-import AppBox from '~/ui/AppBox'
-import Text from '~/ui/typography/Text'
+import { Box, Heading, KleeHeadingSize, Text } from '@liinkiing/klee'
 
 const About: NextPage = () => (
   <Page>
     <AppHead title="About" />
-    <Heading as="h1" size={HeadingSize.Xl}>
+    <Heading as="h1" size={KleeHeadingSize.Xl}>
       About Page
     </Heading>
-    <AppBox mt={2}>
+    <Box mt={2}>
       <Text>Hello from about page</Text>
-    </AppBox>
+    </Box>
   </Page>
 )
 

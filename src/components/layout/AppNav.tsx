@@ -1,18 +1,18 @@
 import React from 'react'
+import { Box, HStack } from '@liinkiing/klee'
 import AppLink from '~/ui/typography/AppLink'
-import AppBox from '~/ui/AppBox'
 
 const AppNav: React.FC = () => (
-  <AppBox as="nav" p={4}>
-    <AppBox as="ul" display="flex">
-      <AppBox as="li" marginRight={2}>
+  <Box as="nav" p={4}>
+    <HStack as="ul" sx={{ listStyle: 'none' }} spacing={2}>
+      <Box as="li">
         <AppLink href="/">Home</AppLink>
-      </AppBox>
-      <AppBox as="li" marginRight={2}>
+      </Box>
+      <Box as="li">
         <AppLink href="/about">About</AppLink>
-      </AppBox>
-    </AppBox>
-  </AppBox>
+      </Box>
+    </HStack>
+  </Box>
 )
 
 export default AppNav
