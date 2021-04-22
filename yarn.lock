@@ -951,10 +951,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@liinkiing/klee@^0.17.4":
-  version "0.17.4"
-  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.17.4.tgz#0f46399ace6b814f7c06f626f50e95e7a2f28638"
-  integrity sha512-TO+PhF4E5+eZ6HwhM7xK58fmbaGEyh3CjldLubfPMg5+covpjeLs4HCa/c4PLqhLobxhFMZJDY5wkCfsMIRMaQ==
+"@liinkiing/klee@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.18.0.tgz#956bde2aa3db6f19b3b8edaf2929fa978d2e32ed"
+  integrity sha512-tHC2svtqUqzm81FzES6Hz77Ih49YLBCW0qYVJciUu6tp/vMHSg/JBjdPxGvlMCNtnHJsSRgL4qCWpvgV7ZodcQ==
   dependencies:
     "@emotion/css" "^11.1.3"
     "@emotion/react" "^11.1.5"
