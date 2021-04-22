@@ -1,7 +1,7 @@
 import { Box, HStack } from '@liinkiing/klee'
 import React from 'react'
 
-import AppLink from '~/ui/typography/AppLink'
+import AppLink from '~/components/AppLink'
 
 const AppNav: React.FC = () => (
   <Box as="nav" p={4}>
