@@ -987,10 +987,10 @@
   resolved "https://registry.yarnpkg.com/@liinkiing/react-hooks/-/react-hooks-1.8.1.tgz#42f41088d6c0b408d04962cf0bc60cb0808638a5"
   integrity sha512-CDoqhrcx6gJBrJATyIZyT+IctAMCAhP77+gOoAmSShU7D3lxYl+klbIYB7RM9D4qaVyDm3sfYLimEI/0q/NmWQ==
 
-"@liinkiing/react-hooks@^1.9.2":
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/@liinkiing/react-hooks/-/react-hooks-1.9.2.tgz#422d7b2b9d805da161e79d62452db5a0ad4b3053"
-  integrity sha512-a9UmPlK5Nqj0jsN3TZ9CVGm0QYzz8htZPh1O6Djp8ldt+4vG32hVWcGePF+Qed+DwePOh8661ooVfuuSgFwDng==
+"@liinkiing/react-hooks@^1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@liinkiing/react-hooks/-/react-hooks-1.9.3.tgz#f10eb6bd00c19f5e27c616924a9e37543356f216"
+  integrity sha512-c/P/s777trM18Z88UCgZE11iDCmuyC1P5icinJEuP9cEEq2fTF27Womxqkq+O57x4QvYRIYk5syM4LFNkQa3XA==
 
 "@next/env@10.1.3":
   version "10.1.3"
