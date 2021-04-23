@@ -41,7 +41,8 @@
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
-    "@liinkiing/klee": "^0.20.0",
+    "@liinkiing/klee": "^0.20.1",
+    "@liinkiing/react-hooks": "^1.9.2",
     "@styled-system/css": "^5.1.5",
     "@styled-system/should-forward-prop": "^5.1.5",
     "@testing-library/jest-dom": "^5.12.0",

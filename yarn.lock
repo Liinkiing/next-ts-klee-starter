@@ -951,10 +951,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@liinkiing/klee@^0.20.0":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.20.0.tgz#9bbcd2f387f927d66441ea4a775a2ba7c28a3ffd"
-  integrity sha512-8ObPmUqNoYoVs7C4RM9o2yqHoizQLlWxiB3xv+cGSxAZIaVOZ3ejzlPgLJT8f/3UaFi81KMVpfWfiwBrtRcEvA==
+"@liinkiing/klee@^0.20.1":
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.20.1.tgz#e88e110e9b30cd9f8e3c09f00d69217d698e50b2"
+  integrity sha512-inwKQu/TMAtmOkZyiE2YWaNcYdgrtxr/TT8V5AxkCByHuYdBmBYIzmAFkukF2txjqpxYQdRcRm8dBrD4PCxwWA==
   dependencies:
     "@emotion/css" "^11.1.3"
     "@emotion/react" "^11.1.5"
@@ -986,6 +986,11 @@
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@liinkiing/react-hooks/-/react-hooks-1.8.1.tgz#42f41088d6c0b408d04962cf0bc60cb0808638a5"
   integrity sha512-CDoqhrcx6gJBrJATyIZyT+IctAMCAhP77+gOoAmSShU7D3lxYl+klbIYB7RM9D4qaVyDm3sfYLimEI/0q/NmWQ==
+
+"@liinkiing/react-hooks@^1.9.2":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@liinkiing/react-hooks/-/react-hooks-1.9.2.tgz#422d7b2b9d805da161e79d62452db5a0ad4b3053"
+  integrity sha512-a9UmPlK5Nqj0jsN3TZ9CVGm0QYzz8htZPh1O6Djp8ldt+4vG32hVWcGePF+Qed+DwePOh8661ooVfuuSgFwDng==
 
 "@next/env@10.1.3":
   version "10.1.3"
