@@ -41,7 +41,7 @@
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
-    "@liinkiing/klee": "^0.20.1",
+    "@liinkiing/klee": "^0.20.2",
     "@liinkiing/react-hooks": "^1.10.2",
     "@styled-system/css": "^5.1.5",
     "@styled-system/should-forward-prop": "^5.1.5",
