@@ -1,12 +1,12 @@
 import styled from '@emotion/styled'
-import { Box } from '@liinkiing/klee'
+import { Box, BoxProps } from '@liinkiing/klee'
 import { motion } from 'framer-motion'
 import { NextPage } from 'next'
 import React from 'react'
 
 import { ease } from '~/common/framer'
 
-interface Props {
+interface Props extends BoxProps {
   readonly as?: string
   readonly transitionDuration?: number
 }

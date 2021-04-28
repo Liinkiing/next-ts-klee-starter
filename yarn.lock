@@ -956,10 +956,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@liinkiing/klee@^0.23.3":
-  version "0.23.3"
-  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.23.3.tgz#6b8bd2e883337acf776edc6a953dc5ba3de0a695"
-  integrity sha512-y2FLYxV37OUj5SpVToBGOnpL/KdfxgWvdgu9ra7YAHueJYAUo4Wygksj9vlQIjmfJ97nAgoZkZTnfhE2y8ClxQ==
+"@liinkiing/klee@^0.24.0":
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.24.0.tgz#1989889705d580d5ccad0719aee7ab7a4abcbaed"
+  integrity sha512-KmK7yh6WVtouTyCsFifS3XFfeCV+r6jpxo8MrJNMmcWcgGS8fyPiYpzL+Fbhc9+US8HDcJgx7WUyBUXx+hDSjA==
   dependencies:
     "@emotion/css" "^11.1.3"
     "@emotion/react" "^11.1.5"

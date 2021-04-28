@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from '@liinkiing/klee'
+import { klee, Text, Heading } from '@liinkiing/klee'
 import { NextPage } from 'next'
 
 import AppHead from '~/components/AppHead'
@@ -8,9 +8,9 @@ const Index: NextPage = () => (
   <Page>
     <AppHead title="Homepage" />
     <Heading as="h1">Index Page</Heading>
-    <Box mt={2}>
+    <klee.div mt={2}>
       <Text>Hello from index page</Text>
-    </Box>
+    </klee.div>
   </Page>
 )
 
