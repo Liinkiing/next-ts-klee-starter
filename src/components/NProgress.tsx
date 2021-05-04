@@ -23,14 +23,14 @@ export default class NProgress extends Component<Props> {
   routeChangeStart = () => {
     const { showAfterMs } = this.props
     if (this.timer) {
-      clearTimeout(this.timer)
+      window.clearTimeout(this.timer)
     }
-    this.timer = setTimeout(NProgressLib.start, showAfterMs)
+    this.timer = window.setTimeout(NProgressLib.start, showAfterMs)
   }
 
   routeChangeEnd = () => {
     if (this.timer) {
-      clearTimeout(this.timer)
+      window.clearTimeout(this.timer)
     }
     NProgressLib.done()
   }
@@ -49,7 +49,7 @@ export default class NProgress extends Component<Props> {
 
   componentWillUnmount() {
     if (this.timer) {
-      clearTimeout(this.timer)
+      window.clearTimeout(this.timer)
     }
     Router.events.off('routeChangeStart', this.routeChangeStart)
     Router.events.off('routeChangeComplete', this.routeChangeEnd)
