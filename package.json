@@ -43,7 +43,7 @@
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
     "@hookform/resolvers": "^2.4.0",
-    "@liinkiing/klee": "^0.25.0",
+    "@liinkiing/klee": "^0.27.1",
     "@liinkiing/react-hooks": "^1.10.3",
     "@next/bundle-analyzer": "^10.2.0",
     "@styled-system/css": "^5.1.5",
