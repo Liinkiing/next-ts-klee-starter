@@ -1,7 +1,7 @@
 import { KleeProvider, useTheme } from '@liinkiing/klee'
 import { AnimatePresence } from 'framer-motion'
 import { AppProps } from 'next/app'
-import React, { FC } from 'react'
+import type { FC } from 'react'
 
 import NProgress from '~/components/NProgress'
 import AppNav from '~/components/layout/AppNav'

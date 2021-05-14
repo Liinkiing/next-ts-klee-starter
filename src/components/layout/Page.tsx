@@ -2,7 +2,6 @@ import styled from '@emotion/styled'
 import { Box, BoxProps } from '@liinkiing/klee'
 import { motion } from 'framer-motion'
 import { NextPage } from 'next'
-import React from 'react'
 
 import { ease } from '~/common/framer'
 

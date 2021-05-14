@@ -1,10 +1,10 @@
 import { Box, BoxProps, KleeFontFamily, KleeFontWeight } from '@liinkiing/klee'
 import Link, { LinkProps } from 'next/link'
-import React from 'react'
+import { forwardRef } from 'react'
 
 interface Props extends LinkProps, BoxProps {}
 
-const AppLink = React.forwardRef<HTMLElement, Props>(
+const AppLink = forwardRef<HTMLElement, Props>(
   ({ href, as, replace, scroll, shallow, prefetch, passHref = true, ...rest }, ref) => {
     return (
       <Link
