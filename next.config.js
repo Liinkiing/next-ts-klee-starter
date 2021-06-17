@@ -63,9 +63,6 @@ const securityHeaders = [
 ]
 
 module.exports = withPlugins([[withBundleAnalyzer], withFonts, withImages], {
-  future: {
-    webpack5: true,
-  },
   i18n: {
     locales: ['en'],
     defaultLocale: 'en',
