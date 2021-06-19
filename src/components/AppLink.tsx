@@ -1,4 +1,4 @@
-import { Box, BoxProps, KleeFontFamily, KleeFontWeight } from '@liinkiing/klee'
+import { Box, BoxProps, KleeFontFamily, KleeFontWeight, useColorModeValue } from '@liinkiing/klee'
 import Link, { LinkProps } from 'next/link'
 import { forwardRef } from 'react'
 
@@ -21,7 +21,7 @@ const AppLink = forwardRef<HTMLElement, Props>(
           sx={{ textDecoration: 'none' }}
           fontWeight={KleeFontWeight.Semibold}
           fontFamily={KleeFontFamily.Body}
-          color="blue.800"
+          color={useColorModeValue('blue.800', 'blue.400')}
           as="a"
           {...rest}
         />
