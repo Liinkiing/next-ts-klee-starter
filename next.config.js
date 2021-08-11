@@ -62,7 +62,11 @@ const securityHeaders = [
   },
 ]
 
-module.exports = withPlugins([[withBundleAnalyzer], withFonts, withImages], {
+/** @type {import('next/dist/server/config-shared').NextConfig} */
+const nextConfig = {
+  experimental: {
+    esmExternals: true,
+  },
   i18n: {
     locales: ['en'],
     defaultLocale: 'en',
@@ -96,4 +100,6 @@ module.exports = withPlugins([[withBundleAnalyzer], withFonts, withImages], {
 
     return config
   },
-})
+}
+
+module.exports = withPlugins([[withBundleAnalyzer], withFonts, withImages], nextConfig)
