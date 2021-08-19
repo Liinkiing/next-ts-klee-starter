@@ -1027,10 +1027,10 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@liinkiing/klee@^0.30.0":
-  version "0.30.0"
-  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.30.0.tgz#2aeaed3ae62d8382708971ca058585712ddb7fcf"
-  integrity sha512-vd2UWo3DTEd4KI08hJ7Pqe2emz4KUNukbMPrirGwELISqm3Om/P7kTjt6w30pvpB+dF+58Y6lGfYKxkywWAFgA==
+"@liinkiing/klee@^0.31.0":
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.31.0.tgz#a1eab0b55694658b3fcb9a120d56c478d9d10e39"
+  integrity sha512-Av91IURhtl8T6T/iCmmUE3Idq/Xy0jWYGdkCeUMr0y8mSJ0jw8+zg0Pk759GuSGeLDCRpKoP5HUyf5QIlViPvA==
   dependencies:
     "@emotion/css" "^11.1.3"
     "@emotion/serialize" "^1.0.2"
@@ -1038,11 +1038,20 @@
     "@styled-system/should-forward-prop" "^5.1.5"
     "@styled-system/theme-get" "^5.1.2"
     "@tippyjs/react" "^4.2.5"
+    "@types/body-scroll-lock" "^3.1.0"
+    "@types/react" "^17.0.16"
+    "@types/react-dom" "^17.0.9"
+    "@types/styled-system" "^5.1.12"
+    "@types/styled-system__css" "^5.0.16"
+    "@types/styled-system__should-forward-prop" "^5.1.2"
+    "@types/styled-system__theme-get" "^5.0.1"
     body-scroll-lock "^3.1.5"
     color-hash-ts "^0.0.7"
     deepmerge "^4.2.2"
     font-color-contrast "^1.1.1"
     lint-staged "^11.1.2"
+    lodash "^4.17.21"
+    lodash-es "^4.17.21"
     mitt "^3.0.0"
     patch-package "^6.4.7"
     polished "^4.1.3"
@@ -1386,6 +1395,11 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/body-scroll-lock@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@types/body-scroll-lock/-/body-scroll-lock-3.1.0.tgz#435f6abf682bf58640e1c2ee5978320b891970e7"
+  integrity sha512-3owAC4iJub5WPqRhxd8INarF2bWeQq1yQHBgYhN0XLBJMpd5ED10RrJ3aKiAwlTyL5wK7RkBD4SZUQz2AAAMdA==
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
@@ -1520,6 +1534,15 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
+"@types/react@^17.0.16":
+  version "17.0.19"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.19.tgz#8f2a85e8180a43b57966b237d26a29481dacc991"
+  integrity sha512-sX1HisdB1/ZESixMTGnMxH9TDe8Sk709734fEQZzCV/4lSu9kJCPbo2PbTRoZM+53Pp0P10hYVyReUueGwUi4A==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
 "@types/react@^17.0.17":
   version "17.0.17"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.17.tgz#1772d3d5425128e0635a716f49ef57c2955df055"
@@ -1557,6 +1580,11 @@
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@types/styled-system__should-forward-prop/-/styled-system__should-forward-prop-5.1.2.tgz#57a71acb9c85bdd6e47cbb7f645037c6858c1ee7"
   integrity sha512-xHTA+qeTkKw8bJ7O7UxkzgTkVtlcEV0NbVlGkTZqHK/0YIGAPBcvHKs2y3811UeeHbkW9H/qfy7HtqwvAvwCSQ==
+
+"@types/styled-system__theme-get@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__theme-get/-/styled-system__theme-get-5.0.1.tgz#c3884e8f15641603503dc1d49f9d282dce11e5fb"
+  integrity sha512-+i4VZ5wuYKMU8oKPmUlzc9r2RhpSNOK061Khtrr7X0sOQEcIyhUtrDusuMkp5ZR3D05Xopn3zybTPyUSQkKGAA==
 
 "@types/testing-library__jest-dom@^5.9.1":
   version "5.9.2"
@@ -4977,6 +5005,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
 lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
@@ -4997,7 +5030,7 @@ lodash.truncate@^4.4.2:
   resolved "https://registry.yarnpkg.com/lodash.truncate/-/lodash.truncate-4.4.2.tgz#5a350da0b1113b837ecfffd5812cbe58d6eae193"
   integrity sha1-WjUNoLERO4N+z//VgSy+WNbq4ZM=
 
-lodash@4.17.21, lodash@4.x, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.7.0:
+lodash@4.17.21, lodash@4.x, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
