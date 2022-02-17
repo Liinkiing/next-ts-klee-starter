@@ -8,7 +8,7 @@
     "build:analyze": "cross-env ANALYZE=true next build",
     "start": "next start",
     "lint": "eslint --no-error-on-unmatched-pattern --cache --fix --report-unused-disable-directives {src,pages}/**/*.{js,ts,jsx,tsx}",
-    "ts:check": "tsc --noEmit",
+    "ts:check": "tsc --pretty --skipLibCheck --noEmit",
     "test": "jest --runInBand --coverage=false",
     "test:ci": "yarn test --ci",
     "test:watch": "yarn test --watch",
@@ -98,9 +98,15 @@
     "typescript": "^4.5.5"
   },
   "lint-staged": {
-    "*.md": ["npx prettier --parser markdown --write"],
-    "*.{css,scss,less}": ["npx prettier --parser css --write"],
-    "*.json": ["npx prettier --parser json --write"],
+    "*.md": [
+      "npx prettier --parser markdown --write"
+    ],
+    "*.{css,scss,less}": [
+      "npx prettier --parser css --write"
+    ],
+    "*.json": [
+      "npx prettier --parser json --write"
+    ],
     "*.{js,ts,jsx,tsx}": [
       "eslint --fix",
       "prettier --write",
