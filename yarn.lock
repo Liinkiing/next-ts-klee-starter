@@ -762,10 +762,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@liinkiing/klee@^0.35.0":
-  version "0.35.0"
-  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.35.0.tgz#c1470db5c15b36fd71ae81b5b7dd1d6a95d091d3"
-  integrity sha512-4GN7qLJxvE8PK0nWJcjtSj+Odkw4gwE9JKscybwiCzAmUSODxyqB/cITbKyJUD5N3j8GJRr/Z3gp1Dox2yiyWQ==
+"@liinkiing/klee@^0.39.0":
+  version "0.39.0"
+  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.39.0.tgz#ccaa83859c3c5cc48e4944ba90b5212a25b7732c"
+  integrity sha512-93OPytHrs8LQkrZwvf+HCFm7C0pMb9M6R+17ENj9TxEEJGkBktupun7ileshbhZIAvO2zdo5Spy2G5Ml2yVHSw==
   dependencies:
     "@emotion/css" "^11.5.0"
     "@emotion/serialize" "^1.0.2"
@@ -784,7 +784,7 @@
     color-hash-ts "^0.0.7"
     deepmerge "^4.2.2"
     eslint "7.32.0"
-    font-color-contrast "^9.0.2"
+    font-color-contrast "^11.1.0"
     lint-staged "^11.2.6"
     lodash "^4.17.21"
     lodash-es "^4.17.21"
@@ -2828,10 +2828,10 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-font-color-contrast@^9.0.2:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/font-color-contrast/-/font-color-contrast-9.1.0.tgz#f21f21bb187a4478fc9868548490f1d8ca339c13"
-  integrity sha512-OnlS86odDvFxAvDnUt8kd8K7JIM1nronuJws5Uu3Jaud4v66PEd01UyOOZ8KWXNbHCOdI/Pfe/bFUlceQsaPcg==
+font-color-contrast@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/font-color-contrast/-/font-color-contrast-11.1.0.tgz#f147720c1fd6e5e43be7aea86d247b1cdc46508b"
+  integrity sha512-PxpFaesCSsDwaciw7MF6B2thUkH7skqZlz4BzUnvapR6+Es2877q7ru/tqfsITuaraPz+TGfsOfdtU4D0qjqEw==
 
 form-data@^3.0.0:
   version "3.0.1"
