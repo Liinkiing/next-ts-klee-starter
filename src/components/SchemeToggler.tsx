@@ -26,7 +26,7 @@ export const SchemeToggler: VFC<Omit<IconButtonProps, 'icon'>> = ({ ...props }) 
           <Modal.Header>
             <Heading>About</Heading>
           </Modal.Header>
-          <Modal.Body textAlign={'justify'} gap={8}>
+          <Modal.Body textAlign="justify" gap={8}>
             <Text>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos ducimus ea labore quod.
               Ab accusamus, animi architecto autem blanditiis ducimus expedita iure magni nostrum optio quae quibusdam,

@@ -1,8 +1,10 @@
-import { Box, BoxProps, KleeFontFamily, KleeFontWeight, useColorModeValue } from '@liinkiing/klee'
-import Link, { LinkProps } from 'next/link'
+import type { BoxProps } from '@liinkiing/klee'
+import { Box, KleeFontFamily, KleeFontWeight, useColorModeValue } from '@liinkiing/klee'
+import type { LinkProps } from 'next/link'
+import Link from 'next/link'
 import { forwardRef } from 'react'
 
-interface Props extends LinkProps, BoxProps {}
+interface Props extends LinkProps, Omit<BoxProps, 'onMouseEnter' | 'onClick'> {}
 
 const AppLink = forwardRef<HTMLElement, Props>(
   ({ href, as, replace, scroll, shallow, prefetch, passHref = true, ...rest }, ref) => {

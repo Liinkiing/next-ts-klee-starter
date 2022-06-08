@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
-import { Box, BoxProps } from '@liinkiing/klee'
+import type { BoxProps } from '@liinkiing/klee'
+import { Box } from '@liinkiing/klee'
 import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
 
