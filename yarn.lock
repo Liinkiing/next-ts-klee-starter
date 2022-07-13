@@ -860,10 +860,10 @@
     eslint-plugin-unicorn "^42.0.0"
     prettier "^2.6.2"
 
-"@liinkiing/klee@^0.40.0":
-  version "0.40.0"
-  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.40.0.tgz#04ac44e33122e532878039df94518d2c84ce748a"
-  integrity sha512-IiXrzGShlVKR6a4WsX2wHc2FvLg8K6cvSTenq3iqBjcLNlYlzyvb+Nl01N3vRUCtY5hclK9kJ0KsJ0DPFRdPyA==
+"@liinkiing/klee@^0.43.1":
+  version "0.43.1"
+  resolved "https://registry.yarnpkg.com/@liinkiing/klee/-/klee-0.43.1.tgz#4f064751f8a0c98ae196ce1877102ca0f2f7d31d"
+  integrity sha512-VZusRimOmJmHpqahadF0Qvzgm/Hftd4xQxY3NBsUg6HHSvv0Wb+QEFqd2vQPXx3pEaSwgzw7PkyW53/me3Yujw==
   dependencies:
     "@emotion/css" "^11.5.0"
     "@emotion/serialize" "^1.0.2"
