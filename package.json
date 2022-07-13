@@ -104,7 +104,7 @@
     "*.{js,ts,jsx,tsx}": [
       "eslint --fix",
       "prettier --write",
-      "jest -c jest.config.js --bail --runInBand --findRelatedTests --coverage=false"
+      "jest -c jest.config.js --bail --runInBand --findRelatedTests --coverage=false --passWithNoTests"
     ]
   }
 }
