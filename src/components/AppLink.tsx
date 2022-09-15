@@ -4,7 +4,7 @@ import type { LinkProps } from 'next/link'
 import Link from 'next/link'
 import { forwardRef } from 'react'
 
-interface Props extends LinkProps, Omit<BoxProps, 'onMouseEnter' | 'onClick'> {}
+interface Props extends LinkProps, Omit<BoxProps, 'onMouseEnter' | 'onClick' | 'onTouchStart'> {}
 
 const AppLink = forwardRef<HTMLElement, Props>(
   ({ href, as, replace, scroll, shallow, prefetch, passHref = true, ...rest }, ref) => {

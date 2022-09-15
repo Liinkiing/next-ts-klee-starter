@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+// eslint-disable-next-line import/no-extraneous-dependencies
 const webpack = require('webpack')
 
 const dotenvLoad = require('dotenv-load')
 
-const withPlugins = require('next-compose-plugins')
 const withImages = require('next-images')
 const withFonts = require('next-fonts')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -64,6 +64,7 @@ const securityHeaders = [
 
 /** @type {import('next/dist/server/config-shared').NextConfig} */
 const nextConfig = {
+  assetPrefix: undefined,
   images: {
     formats: ['image/avif', 'image/webp'],
   },
@@ -106,4 +107,15 @@ const nextConfig = {
   },
 }
 
-module.exports = withPlugins([[withBundleAnalyzer], withFonts, withImages], nextConfig)
+module.exports = (_phase, { defaultConfig }) => {
+  // Workaround
+  delete defaultConfig.webpackDevMiddleware
+  delete defaultConfig.configOrigin
+  delete defaultConfig.target
+  delete defaultConfig.webpack5
+  delete defaultConfig.amp.canonicalBase
+  delete defaultConfig.experimental.outputFileTracingRoot
+
+  const plugins = [withBundleAnalyzer, withImages, withFonts]
+  return plugins.reduce((acc, plugin) => plugin(acc), { ...defaultConfig, ...nextConfig })
+}

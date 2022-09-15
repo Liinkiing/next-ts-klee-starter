@@ -15,7 +15,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
       <GlobalStyles />
       <NProgress color={theme.colors.red['400']} spinner={false} />
       <AppNav />
-      <AnimatePresence exitBeforeEnter initial={false}>
+      <AnimatePresence mode="wait" initial={false}>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
     </>
